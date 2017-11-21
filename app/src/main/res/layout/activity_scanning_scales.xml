@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/inculde_title_left" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/scanning_scales_img"
+            android:layout_width="232dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="110dp" />
+
+        <TextView
+            android:id="@+id/scanning_scales_scales_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scanning_scales_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:text="请站在 ibody 智能体脂秤上"
+            android:textColor="@color/Black_a"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/scanning_scales_scales_blu"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_below="@+id/scanning_scales_scales_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:text="保持手机蓝牙为开启状态"
+            android:textColor="@color/Black_a"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignTop="@+id/scanning_scales_scales_blu"
+            android:layout_toLeftOf="@+id/scanning_scales_scales_blu"
+            android:src="@mipmap/scanning_scales_left_2x" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignTop="@+id/scanning_scales_scales_blu"
+            android:layout_toRightOf="@+id/scanning_scales_scales_blu"
+            android:src="@mipmap/scanning_scales_right_2x" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/scanning_scales_go_participate"
+            android:layout_centerHorizontal="true"
+            android:text="ibody智能体脂秤使用说明"
+            android:textColor="@color/blue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/scanning_scales_go_participate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/scanning_scales_one_bind"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:text="还没参加Bodaybank计划？去参与！"
+            android:textColor="@color/blue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/scanning_scales_one_bind"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="32dp"
+            android:background="@color/Pink_main"
+            android:gravity="center"
+            android:text="一键绑定"
+            android:textColor="@color/White"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+
+    tools:context="com.wpz.mymvpframe.view.activity.MainActivity">
+    <!--↑↑↑沉浸式属性↑↑↑-->
+
+
+    <FrameLayout
+        android:id="@+id/FramLaout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"></FrameLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/GreyBlue"
+        android:paddingTop="9dp"
+        android:paddingBottom="2dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_radiobtn_training"
+            style="@style/RedioButton"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/main_radiobtn_find"
+            style="@style/RedioButton"
+            android:text="@string/main_radiobtn_find" />
+
+        <RadioButton
+            android:id="@+id/main_radiobtn_chatting"
+            style="@style/RedioButton"
+            android:text="@string/main_radiobtn_chatting" />
+
+        <RadioButton
+            android:id="@+id/main_radiobtn_mine"
+            style="@style/RedioButton"
+            android:text="@string/main_radiobtn_mine" />
+    </RadioGroup>
+
+
+    <!--<Button-->
+    <!--android:id="@+id/button"-->
+    <!--android:text="发起请求"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textview"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Hello World!" />-->
+    <!--<ImageView-->
+    <!--android:id="@+id/imageview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/details_title"
+        layout="@layout/inculde_title_left" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/details_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        
+        <RelativeLayout
+            android:id="@+id/details_service"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:background="@mipmap/kefu_3_2x"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"/>
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="客服"
+                android:textColor="@color/Black_a"
+                android:textSize="16sp"
+                android:gravity="center"/>
+            
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/Details_btn"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@color/Pink_main"
+            android:text="立即参与"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+
+</LinearLayout>

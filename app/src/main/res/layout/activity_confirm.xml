@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/confirm_title"
+        layout="@layout/inculde_title_left" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--有地址-->
+            <RelativeLayout
+                android:id="@+id/confirm_default_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/confirm_address_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:textColor="@color/Black_a"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/confirm_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/confirm_address_text"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="吱吱吱"
+                    android:textColor="@color/add_text"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/confirm_name_phono_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/confirm_name_text"
+                    android:gravity="center"
+                    android:text="XXXXXXXXXXXX"
+                    android:textColor="@color/add_text"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/right_return_copy_2x" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/confirm_new_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="84dp"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="新建收货地址"
+                    android:textColor="@color/Black_a"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/right_return_copy_2x" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/confirm_address"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="18dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/receipt_information_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="北京市XXXXXXXXXXXXXXXXXXX" />
+
+                <TextView
+                    android:id="@+id/receipt_information_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="20dp"
+                    android:text="吱吱吱" />
+
+                <TextView
+                    android:id="@+id/receipt_information_phono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/receipt_information_name"
+                    android:text="XXXXXXXXXXXX" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/White_training" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/confirm_commodity_img"
+                    android:layout_width="72dp"
+                    android:layout_height="73dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/White_training"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/confirm_commodity_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_alignTop="@+id/confirm_commodity_img"
+                    android:layout_toRightOf="@+id/confirm_commodity_img"
+                    android:text="asdsadsadasda"
+                    android:textColor="@color/Black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/confirm_commodity_Details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_alignLeft="@+id/confirm_commodity_name"
+                    android:layout_below="@+id/confirm_commodity_name"
+                    android:text="asdsadasddsa"
+                    android:textColor="@color/Black_b"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/confirm_commodity_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_alignBottom="@+id/confirm_commodity_img"
+                    android:layout_toRightOf="@+id/confirm_commodity_img"
+                    android:text="sadasd"
+                    android:textColor="@color/Pink_main"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/confirm_commodity_Quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_alignBottom="@+id/confirm_commodity_img"
+                    android:layout_alignParentRight="true"
+                    android:text="X1"
+                    android:textColor="@color/Pink_main"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/confirm_scale_layout"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <CheckBox
+                    android:id="@+id/confirm_buy_scale_check"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_check_box_round"
+                    android:button="@null" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="半价加购ibody体脂称"
+                    android:textColor="@color/Black_a"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="￥68.00"
+                    android:textColor="@color/Pink_main"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/White_training" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:text="商品总额"
+                    android:textColor="@color/add_text"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/confirm_lump_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:text="¥500"
+                    android:textColor="@color/Black_c"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:text="减免总额"
+                    android:textColor="@color/add_text"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/confirm_Relief_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="¥-0.00"
+                    android:textColor="@color/Pink_main"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/White_training" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="备注信息" />
+
+                <EditText
+                    android:id="@+id/confirm_Remarks_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@drawable/confirm_edit"
+                    android:gravity="left|top"
+                    android:hint="请输入备注留言（请少于100字）"
+                    android:inputType="textMultiLine"
+                    android:maxLength="100"
+                    android:minLines="7"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/Black_b"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/confirm_weixin_img"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@mipmap/weixin_27_2x" />
+
+                <TextView
+                    android:id="@+id/confirm_weixin_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/confirm_weixin_img"
+                    android:gravity="center"
+                    android:text="微信(默认)"
+                    android:textColor="@color/Black_a"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/confirm_pay_weixin_check"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/selector_check_box_hook"
+                    android:button="@null"
+                    android:checked="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/White_training" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/confirm_zhifubao_img"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@mipmap/zhifubao_27_copy_2x" />
+
+                <TextView
+                    android:id="@+id/confirm_zhifubao_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/confirm_zhifubao_img"
+                    android:gravity="center"
+                    android:text="支付宝"
+                    android:textColor="@color/Black_a"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/confirm_pay_zhifubao_check"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/selector_check_box_hook"
+                    android:button="@null" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@color/White_training" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="使用优惠卷"
+                    android:textColor="@color/Black_a"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_toLeftOf="@+id/confirm_coupon"
+                    android:text="满减50元"
+                    android:textColor="@color/Black_a"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/confirm_coupon"
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="8dp"
+                    android:background="@mipmap/right_return_copy_2x" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/White_training" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:paddingBottom="19dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp">
+
+                <CheckBox
+                    android:id="@+id/confirm_Terms_check"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/selector_check_box_hook"
+                    android:button="@null"
+                    android:checked="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_alignTop="@+id/confirm_Terms_check"
+                    android:layout_marginLeft="24dp"
+                    android:gravity="center_vertical"
+                    android:text="同意《bodybank条款》"
+                    android:textColor="@color/Black_a"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/White_training" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/confirm_payables"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Pink_main"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/confirm_pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Pink_main"
+            android:gravity="center"
+            android:text="支付"
+            android:textColor="@color/White"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

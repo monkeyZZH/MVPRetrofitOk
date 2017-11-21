@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/Black">
+
+    <ImageView
+        android:id="@+id/register_or_login_beijing_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/register_beijing_2x"/>
+    <TextView
+        android:id="@+id/register_register_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/complete_button"
+        android:layout_marginBottom="19dp"
+        android:text="@string/register"
+        android:textSize="16sp"
+        android:textColor="@color/White"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        android:paddingLeft="140dp"
+        android:paddingRight="140dp"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:id="@+id/relativeLayout">
+        <TextView
+            android:id="@+id/have"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已经有了账户？"
+            android:textSize="13sp"
+            android:textColor="@color/White"/>
+        <TextView
+            android:id="@+id/register_login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/have"
+            android:layout_toRightOf="@+id/have"
+            android:text="点击登录"
+            android:textSize="13sp"
+            android:textColor="@color/White"
+            />
+    </RelativeLayout>
+</RelativeLayout>

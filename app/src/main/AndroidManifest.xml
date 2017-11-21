@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wpz.mymvpframe">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+
+    <!--蓝牙体脂秤权限-->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!--蓝牙体脂秤需要的定位权限-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+
+    <!--支付宝权限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+
+    <application
+        tools:replace="android:icon, android:theme"
+        android:name="com.wpz.mymvpframe.application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name="com.wpz.mymvpframe.view.activity.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.wpz.mymvpframe.view.activity.MainActivity"></activity>
+        <activity android:name="com.wpz.mymvpframe.view.activity.DetailsActivity"></activity>
+        <activity android:name="com.wpz.mymvpframe.view.activity.ConfirmActivity"></activity>
+
+        <activity android:name="com.wpz.mymvpframe.view.activity.AddAddressActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+
+        </activity>
+        <activity android:name=".view.activity.ReceipInformationActivity"></activity>
+        <activity android:name=".view.activity.ModifyActivity"></activity>
+        <activity android:name=".view.activity.CourseDetailsActivity"></activity>
+        <activity android:name=".view.activity.ArticleDetailsActivity"></activity>
+        <activity android:name=".view.activity.register.RegisterOrLoginActivity"></activity>
+        <activity android:name=".view.activity.register.RegisterPhoneNumActivity"></activity>
+        <activity android:name=".view.activity.register.RegisterBindingPhoneActivity"></activity>
+        <activity android:name=".view.activity.register.RegisterPasswordActivity"></activity>
+        <activity android:name=".view.activity.register.RegisterProtocolActivity"></activity>
+        <activity android:name=".view.activity.register.RegisterAvatarNameActivity"></activity>
+        <activity android:name=".view.activity.register.RegisterLoginActivity"></activity>
+        <activity android:name=".view.activity.PaymentDuccessfulActivity"></activity>
+        <activity android:name=".view.activity.BindScalesActivity"></activity>
+        <activity android:name=".view.activity.ScanningScalesActivity"></activity>
+        <activity android:name=".view.activity.ScaleDataActivity"></activity>
+        <activity android:name=".view.activity.OnTheScaleActivity"></activity>
+        <activity android:name=".view.activity.CalculatedSuccessfullyActivity"></activity>
+
+        <!--支付宝-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!--蓝牙需要的服务-->
+        <service android:name=".bluetooth.wby.WBYService"/>
+
+
+        <!--视频-->
+        <activity android:name=".view.XXX.NoSkinActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboard|locale|screenSize|layoutDirection" />
+
+        <activity android:name=".view.XXX.SkinActivity"
+            android:configChanges="orientation|keyboard|locale|screenSize|layoutDirection"/>
+        <activity android:name=".view.XXX.FixedSkinActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity android:name=".view.XXX.lei" android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

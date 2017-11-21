@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="6.5dp"
+        android:layout_height="19dp"
+        android:background="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/article_name_text"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="彭于晏原来是个人见人爱，花见花开的小胖子，他是如何逆袭成美女见了都尖叫的肌肉型男的呢？"
+        android:textSize="13sp"
+        android:textColor="@color/add_text"/>
+
+</LinearLayout>

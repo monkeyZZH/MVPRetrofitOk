@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/inculde_title_right" />
+
+    <TextView
+        android:id="@+id/payment_order_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:textSize="14sp"
+        android:textColor="@color/Black_a" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/White_training" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/payment_duccessful_commodity_img"
+            android:layout_width="62dp"
+            android:layout_height="62.5dp"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:id="@+id/payment_duccessful_commodity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/payment_duccessful_commodity_img"
+            android:layout_toRightOf="@+id/payment_duccessful_commodity_img"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:id="@+id/payment_duccessful_commodity_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/payment_duccessful_commodity_name"
+            android:layout_below="@+id/payment_duccessful_commodity_name"
+            android:textSize="11sp"
+            android:textColor="@color/Black_b"/>
+
+        <TextView
+            android:id="@+id/payment_duccessful_commodity_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/payment_duccessful_commodity_img"
+            android:layout_toRightOf="@+id/payment_duccessful_commodity_img"
+            android:textColor="@color/Pink_main"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/payment_duccessful_commodity_Quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/payment_duccessful_commodity_img"
+            android:layout_alignParentRight="true"
+            android:text="X1"
+            android:textColor="@color/Pink_main"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/payment_scales"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/payment_scales_text"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:text="半价加购ibody体脂秤"
+            android:textColor="@color/Black_a"
+            android:textSize="13sp"/>
+        <TextView
+            android:id="@+id/payment_scales_num"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:textSize="13sp"
+            android:textColor="@color/Pink_main"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Gray_main1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/payment_shipping_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textSize="13sp"
+            android:textColor="@color/Black_a"/>
+
+        <TextView
+            android:id="@+id/payment_contact_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textSize="13sp"
+            android:textColor="@color/Black_a"/>
+
+        <TextView
+            android:id="@+id/payment_contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/Black_a"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Gray_main1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/payment_successful_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@mipmap/zhifuchenggong_2x" />
+
+        <TextView
+            android:id="@+id/payment_successful_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:text="支付成功" />
+
+        <TextView
+            android:id="@+id/payment_successful_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:text="欢迎加入bodybank计划\n蜕变之路即将开启" />
+
+        <Button
+            android:id="@+id/payment_successful_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/payment_btn"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="餐饮计划，先睹为快"
+            android:textColor="@color/White" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/calculated_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/Black"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/title_on_both_left"
+            android:layout_width="12dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/lift_return_2x" />
+
+        <TextView
+            android:id="@+id/title_on_both_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="挑战自我"
+            android:textColor="@color/White" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/calculated_title"
+        android:orientation="vertical">
+        <!--展示体重脂肪-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="12dp">
+
+                <TextView
+                    android:id="@+id/daily_punch_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="17dp"
+                    android:gravity="center"
+                    android:text="asdasdsasd"
+                    android:textColor="@color/Black_b"
+                    android:textSize="9dp" />
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="12dp"
+                    android:background="@mipmap/scales_2x" />
+
+                <TextView
+                    android:id="@+id/daily_punch_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="16:12"
+                    android:textColor="@color/Black_a"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/Gray_main2" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/White_training"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:ems="1"
+                    android:text="体重"
+                    android:textColor="@color/Black_a"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/daily_punch_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="61.2kg"
+                    android:textColor="@color/Pink_main"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/White_training"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:ems="1"
+                    android:text="脂肪"
+                    android:textColor="@color/Black_a"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/daily_punch_fat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="28.9%"
+                    android:textColor="@color/Pink_main"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Gray_main2" />
+        <!--目标体重-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/success_target_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:text="目标体重：57kg"
+                android:textColor="@color/Black_a"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/success_weight_loss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:text="减         重：57kg"
+                android:textColor="@color/Black_a"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/success_retest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bt_shoap"
+                android:paddingBottom="6dp"
+                android:paddingLeft="90dp"
+                android:paddingRight="90dp"
+                android:paddingTop="6dp"
+                android:text="重新测量"
+                android:textColor="@color/Pink_main"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="37dp"
+            android:layout_marginRight="37dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:background="@mipmap/gift_2x" />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="21天后，如果您能成功减重 4.2kg 以上，将获得bodybank特别赠送的600元京东E卡"
+                android:textSize="13sp"
+                android:textColor="@color/FFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center_horizontal"
+                android:text="惊不惊喜"
+                android:textSize="13sp"
+                android:textColor="@color/FFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center_horizontal"
+                android:text="意不意外"
+                android:textSize="13sp"
+                android:textColor="@color/FFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center_horizontal"
+                android:text="开不开心"
+                android:textSize="13sp"
+                android:textColor="@color/FFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:text="让我们开始21天bodybank双赢之旅吧！"
+                android:textSize="12sp"
+                android:textColor="@color/add_text"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/success_start"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/Pink_main"
+        android:gravity="center"
+        android:text="马上开始"
+        android:textColor="@color/White"
+        android:textSize="16sp" />
+</RelativeLayout>

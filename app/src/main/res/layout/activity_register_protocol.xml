@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--头部-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="15dp"
+        android:background="@color/Black">
+
+        <ImageView
+            android:id="@+id/register_protocol_title_return"
+            android:layout_width="12dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/lift_return_2x" />
+        <ImageView
+            android:id="@+id/register_password_title"
+            android:layout_width="112dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="79dp"
+            android:layout_marginRight="80dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:background="@mipmap/main_title_2x"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BODYBANK用户协议"
+            android:textSize="16sp"
+            android:textColor="@color/Black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:id="@+id/register_protocol_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White_training"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp"
+            android:text="亲爱的用户：
+感谢您选择BODYBANK
+本协议内容包括协议正文及所有本APP已经发布的或将来可能发布的各类规则。所有规则为本协议不可分割的组成部分，与协议正文具有同等法律效力。如您对协议有任何疑问，应向本APP咨询。您在同意所有协议条款并完成注册程序，才能成为本站的正式用户，您点击“我以阅读并同意本APP用户协议和法律协议”按钮后，本协议即生效，对双方产生约束力。只要您使用本APP平台服务，则本协议即对您产生约束，届时您不应以未阅读本协议的内容或者未获得本APP对您问询的解答等理由，主张本协议无效，或要求撤销本协议。您确认：本协议条款是处理双方权利义务的契约，始终有效，法律另有强制性规定或双方另有特别约定的，依其规定。您承诺接受并遵守本协议的约定。如果您不同意本协议的约定，您应立即停止注册程序或停止使用本APP平台服务。"
+            android:textSize="13sp"
+            android:textColor="@color/Black_a"/>
+        <TextView
+            android:id="@+id/register_protocol_know"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="120dp"
+            android:paddingLeft="120dp"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:background="@drawable/complete_button"
+            android:layout_gravity="center_horizontal"
+            android:text="知道啦"
+            android:textSize="16sp"
+            android:textColor="@color/White"/>
+
+    </LinearLayout>
+</LinearLayout>

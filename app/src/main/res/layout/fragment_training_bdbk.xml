@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--今日箴言-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="87dp"
+            android:background="@color/White_training"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/bdbk_title_text"
+                android:layout_width="65dp"
+                android:layout_height="21dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="15dp"
+                android:text="今日箴言"
+                android:textColor="@color/Black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/training_yy"
+                android:layout_width="wrap_content"
+                android:layout_height="18.5dp"
+                android:layout_marginLeft="15dp"
+                android:text="想改变，不等待！"
+                android:textColor="@color/Black_a"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="87dp"
+            android:background="@color/Gray_main" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="87dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="38dp"
+            android:paddingRight="36dp"
+            android:paddingTop="14dp">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="10dp"
+                android:background="@mipmap/success_2x" />
+
+            <TextView
+                android:id="@+id/training_Countdown"
+                android:layout_width="45dp"
+                android:layout_height="61dp"
+                android:gravity="center"
+                android:text="21"
+                android:textColor="@color/GreyBlue"
+                android:textSize="39sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Gray_main" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--课程-->
+                <LinearLayout
+                    android:id="@+id/training_bdbk_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!--食谱-->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@color/Black">
+                        <ImageView
+                            android:id="@+id/training_recipe_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="190dp"/>
+                        <TextView
+                            android:id="@+id/training_recipe_img_title_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="37dp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/White"/>
+                        <TextView
+                            android:id="@+id/training_recipe_img_small_title1_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/training_recipe_img_title_text"
+                            android:layout_marginTop="12dp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/White"/>
+                        <TextView
+                            android:id="@+id/training_recipe_img_small_title2_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/training_recipe_img_small_title1_text"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/White"/>
+                        <TextView
+                            android:id="@+id/training_recipe_img_small_title3_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/training_recipe_img_small_title2_text"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/White"/>
+
+                    </RelativeLayout>
+
+                    <com.wpz.mymvpframe.view.bdbkview.MyExpandableListView
+                        android:id="@+id/training_bdbk_expandableListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@null"
+                        android:dividerHeight="0.5dp"
+                        android:groupIndicator="@null"
+                        android:scrollbars="none" />
+
+                    <LinearLayout
+                        android:id="@+id/training_bdbk_unbalanced_scales"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:layout_marginBottom="27.5dp">
+                        <TextView
+                            android:id="@+id/unbalanced_scales_title_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:text="欢迎加入BODYBANK大家族\n绑定ibody体脂秤，我们一起享“瘦”21天！"
+                            android:textSize="14sp"
+                            android:textColor="@color/Black_a"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="（只有绑定体脂秤才能为您量身定制瘦身计划）"
+                            android:textSize="12sp"
+                            android:textColor="@color/Black_b"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@color/Gray_main1"/>
+                        <RelativeLayout
+                            android:id="@+id/unbalanced_scales_scales"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/unbalanced_scales_img"
+                                android:layout_width="72dp"
+                                android:layout_height="72dp"
+                                android:background="@mipmap/ic_launcher"
+                                android:layout_marginRight="12dp"/>
+                            <TextView
+                                android:id="@+id/unbalanced_scales_name_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/unbalanced_scales_img"
+                                android:layout_toRightOf="@+id/unbalanced_scales_img"
+                                android:text="ibody智能体脂秤"
+                                android:textSize="14sp"
+                                android:textColor="@color/Black_a"/>
+                            <TextView
+                                android:id="@+id/unbalanced_scales_introduction_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/unbalanced_scales_name_text"
+                                android:layout_below="@+id/unbalanced_scales_name_text"
+                                android:layout_marginTop="8dp"
+                                android:text="21天完美蜕变！"
+                                android:textSize="12sp"
+                                android:textColor="@color/Black_b"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="17.5dp"
+                                android:paddingLeft="17.5dp"
+                                android:paddingTop="4.5dp"
+                                android:paddingBottom="4.5dp"
+                                android:background="@drawable/bt_shoap"
+                                android:text="未绑定"
+                                android:textSize="11sp"
+                                android:textColor="@color/Pink_main"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--刻度尺-->
+                <LinearLayout
+                    android:id="@+id/bdbk_Unpaid"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/White"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp">
+
+                            <ImageView
+                                android:layout_width="17dp"
+                                android:layout_height="22dp"
+                                android:layout_marginRight="4dp"
+                                android:background="@mipmap/jinpai_2x" />
+
+                            <TextView
+                                android:id="@+id/training_Bonus_journey_title_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="21dp"
+                                android:gravity="center"
+                                android:textColor="@color/Black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:padding="15dp">
+
+                            <ImageView
+                                android:id="@+id/training_Bonus_journey_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="190dp" />
+
+                            <Button
+                                android:id="@+id/training_Bonus_journey_btn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="45dp"
+                                android:background="@drawable/training_bdbk_btn"
+                                android:paddingLeft="46dp"
+                                android:paddingRight="46dp"
+                                android:text="开启bodybank双赢之旅"
+                                android:textColor="@color/White"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:background="@color/White_training" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp">
+
+                            <ImageView
+                                android:layout_width="17dp"
+                                android:layout_height="17dp"
+                                android:layout_marginRight="4dp"
+                                android:background="@mipmap/ceshi_title_img_2x" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="21dp"
+                                android:gravity="center"
+                                android:text="预估我的减脂潜力"
+                                android:textColor="@color/Black"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/Gray_main" />
+                        <!--刻度尺-->
+                        <LinearLayout
+                            android:id="@+id/training_Scale"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <!--左侧时间轴-->
+                            <RelativeLayout
+                                android:layout_width="45dp"
+                                android:layout_height="408dp"
+                                android:layout_marginLeft="36dp"
+                                android:layout_marginTop="20dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="1dp"
+                                    android:layout_height="408dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="4dp"
+                                    android:background="@mipmap/line44_2x" />
+
+                                <ImageView
+                                    android:id="@+id/keduchi_title"
+                                    android:layout_width="45dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginTop="35dp"
+                                    android:background="@mipmap/group20_2x" />
+
+                                <LinearLayout
+                                    android:id="@+id/xingbie"
+                                    android:layout_width="45dp"
+                                    android:layout_height="20dp"
+                                    android:layout_below="@+id/keduchi_title"
+                                    android:layout_marginTop="50dp">
+
+                                    <TextView
+                                        android:layout_width="28dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginRight="5dp"
+                                        android:gravity="center"
+                                        android:text="性别"
+                                        android:textColor="#333333"
+                                        android:textSize="14sp" />
+
+                                    <ImageView
+                                        android:layout_width="12dp"
+                                        android:layout_height="8dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:background="@mipmap/group22copy2_2x" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/birthday"
+                                    android:layout_width="45dp"
+                                    android:layout_height="20dp"
+                                    android:layout_below="@+id/xingbie"
+                                    android:layout_marginTop="37dp">
+
+                                    <TextView
+                                        android:layout_width="28dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginRight="5dp"
+                                        android:gravity="center"
+                                        android:text="生日"
+                                        android:textColor="#333333"
+                                        android:textSize="14sp" />
+
+                                    <ImageView
+                                        android:layout_width="12dp"
+                                        android:layout_height="8dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:background="@mipmap/group22copy2_2x" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/height"
+                                    android:layout_width="45dp"
+                                    android:layout_height="20dp"
+                                    android:layout_below="@+id/birthday"
+                                    android:layout_marginTop="65dp">
+
+                                    <TextView
+                                        android:layout_width="28dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginRight="5dp"
+                                        android:gravity="center"
+                                        android:text="身高"
+                                        android:textColor="#333333"
+                                        android:textSize="14sp" />
+
+                                    <ImageView
+                                        android:layout_width="12dp"
+                                        android:layout_height="8dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:background="@mipmap/group22copy2_2x" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/weight"
+                                    android:layout_width="45dp"
+                                    android:layout_height="20dp"
+                                    android:layout_below="@+id/height"
+                                    android:layout_marginTop="98dp">
+
+                                    <TextView
+                                        android:layout_width="28dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginRight="5dp"
+                                        android:gravity="center"
+                                        android:text="体重"
+                                        android:textColor="#333333"
+                                        android:textSize="14sp" />
+
+                                    <ImageView
+                                        android:layout_width="12dp"
+                                        android:layout_height="8dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:background="@mipmap/group22copy2_2x" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                            <!--右侧刻度尺-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="530dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical"
+                                android:paddingRight="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="54dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:background="@mipmap/group_29_2x"
+                                    android:orientation="vertical"
+                                    android:paddingLeft="6dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="18dp"
+                                        android:layout_marginLeft="9dp"
+                                        android:layout_marginRight="9dp"
+                                        android:layout_marginTop="9dp"
+                                        android:gravity="left"
+                                        android:text="更科学的餐饮建议，更适合白领学生的建设计划!"
+                                        android:textColor="#fff"
+                                        android:textSize="10.5sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="18dp"
+                                        android:layout_marginBottom="9dp"
+                                        android:layout_marginLeft="9dp"
+                                        android:layout_marginRight="9dp"
+                                        android:gravity="top"
+                                        android:paddingTop="5dp"
+                                        android:text="只等您参与bodyback计划后，我们为您呈现！"
+                                        android:textColor="#fff"
+                                        android:textSize="11sp" />
+                                </LinearLayout>
+
+                                <!--<男女切换-->
+                                <RadioGroup
+                                    android:id="@+id/training_radio_group"
+                                    android:layout_width="120dp"
+                                    android:layout_height="32dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="30dp"
+                                    android:background="@mipmap/rectangle14copy3_2x"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/training_radio_man"
+                                        android:layout_width="60dp"
+                                        android:layout_height="32dp"
+                                        android:background="@drawable/sex_slect"
+                                        android:button="@null"
+                                        android:checked="true"
+                                        android:gravity="center"
+                                        android:text="男" />
+
+                                    <RadioButton
+                                        android:id="@+id/training_radio_woman"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="32dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/sex_slect"
+                                        android:button="@null"
+                                        android:gravity="center"
+                                        android:text="女" />
+                                </RadioGroup>
+                                <!--时间-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="21dp"
+                                    android:layout_marginTop="28dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/training_ed_text"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="20dp"
+                                        android:layout_marginBottom="8dp"
+                                        android:gravity="center"
+                                        android:onClick="onClick"
+                                        android:textColor="#FFCCCCCC" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#cccccc" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="21dp"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="50dp"
+                                        android:layout_height="19dp"
+                                        android:layout_below="@+id/scaleWheelView_height"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="8dp">
+
+                                        <TextView
+                                            android:id="@+id/training_tv_user_height_value"
+                                            android:layout_width="27dp"
+                                            android:layout_height="match_parent"
+                                            android:text="170"
+                                            android:textColor="#F26E7C"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:layout_width="23dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_toRightOf="@id/training_tv_user_height_value"
+                                            android:text="cm"
+                                            android:textColor="#cccccc"
+                                            android:textSize="16sp" />
+
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_gravity="center"
+                                        android:background="#cccccc" />
+
+                                    <com.wpz.mymvpframe.view.bdbkview.ScaleRulerView
+                                        android:id="@+id/training_scaleWheelView_height"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="@android:color/white"
+                                        android:paddingLeft="30dp"
+                                        android:paddingRight="30dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="21dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/training_tv_left_number"
+                                        android:layout_width="17dp"
+                                        android:layout_height="17dp"
+                                        android:layout_gravity="left"
+                                        android:layout_weight="1"
+                                        android:text="160"
+                                        android:textColor="#cccccc" />
+
+                                    <TextView
+                                        android:id="@+id/training_tv_conter_number"
+                                        android:layout_width="25dp"
+                                        android:layout_height="17dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:text="170"
+                                        android:textColor="#cccccc" />
+
+                                    <TextView
+                                        android:id="@+id/training_tv_right_number"
+                                        android:layout_width="17dp"
+                                        android:layout_height="17dp"
+                                        android:layout_gravity="right"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:text="180"
+                                        android:textColor="#cccccc" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="21dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="#cccccc" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="20dp"
+                                    android:paddingLeft="30dp"
+                                    android:paddingRight="30dp">
+
+                                    <TextView
+                                        android:id="@+id/training_tv_user_weight_value"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="65"
+                                        android:textColor="#F26E7C"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="20dp"
+                                        android:layout_marginLeft="4dp"
+                                        android:text="kg"
+                                        android:textColor="#cccccc"
+                                        android:textSize="15sp" />
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/realtive_gren"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="21dp">
+
+                                    <com.wpz.mymvpframe.view.bdbkview.ScaleRulerView
+                                        android:id="@+id/training_scaleWheelView_weight"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:background="@android:color/white"
+                                        android:paddingLeft="30dp"
+                                        android:paddingRight="30dp" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginLeft="14dp"
+                                        android:layout_marginRight="14dp"
+                                        android:background="#cccccc" />
+
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="21dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/training_tv_left_weight"
+                                        android:layout_width="17dp"
+                                        android:layout_height="17dp"
+                                        android:layout_weight="1"
+                                        android:text="50"
+                                        android:textColor="#cccccc"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/training_tv_conter_weight"
+                                        android:layout_width="25dp"
+                                        android:layout_height="17dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:text="60"
+                                        android:textColor="#cccccc"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/training_tv_right_weight"
+                                        android:layout_width="17dp"
+                                        android:layout_height="17dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:text="70"
+                                        android:textColor="#cccccc"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="21dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="#cccccc" />
+
+                                <Button
+                                    android:id="@+id/training_btn_choose_result"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="32dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="21dp"
+                                    android:layout_marginTop="28dp"
+                                    android:background="@drawable/bt_shoap"
+                                    android:gravity="center"
+                                    android:paddingLeft="50dp"
+                                    android:paddingRight="50dp"
+                                    android:text="查看结果"
+                                    android:textColor="#f78c8c"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <!--减脂潜力-->
+                        <LinearLayout
+                            android:id="@+id/training_potential"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="36dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="12dp"
+                                android:text="我的减脂潜力"
+                                android:textColor="@color/Black_a"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="24dp"
+                                android:background="@mipmap/jianzhi_qianli_black_line_2x" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_horizontal">
+
+                                <TextView
+                                    android:id="@+id/jianzhi_qianli"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="5.04"
+                                    android:textColor="@color/Pink_main"
+                                    android:textSize="32sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="kg"
+                                    android:textColor="@color/Black_b"
+                                    android:textSize="32sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="40dp"
+                                android:layout_marginTop="4dp"
+                                android:text="您最多可以瘦"
+                                android:textColor="@color/Black_b"
+                                android:textSize="11sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="根据bodybank健康大数据显示，"
+                                    android:textColor="@color/jianzhi_text"
+                                    android:textSize="11.5sp" />
+
+                                <TextView
+                                    android:id="@+id/jianzhi_quantity"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="91"
+                                    android:textColor="@color/jianzhi_text"
+                                    android:textSize="11.5sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="%跟您身体情况类似"
+                                    android:textColor="@color/jianzhi_text"
+                                    android:textSize="11.5sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="的bodybank学员在按照科学饮食之后："
+                                android:textColor="@color/jianzhi_text"
+                                android:textSize="11.5sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:paddingBottom="30dp"
+                                android:paddingTop="30dp">
+                                <!--第二周-->
+                                <LinearLayout
+                                    android:id="@+id/reduce_fat_lin_two"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp">
+
+                                    <TextView
+                                        android:id="@+id/reduce_fat_two"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="3.14"
+                                        android:textColor="@color/Pink_main"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="kg"
+                                        android:textColor="@color/Black_b"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                                <!--第一周-->
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_toLeftOf="@+id/reduce_fat_lin_two">
+
+                                    <TextView
+                                        android:id="@+id/reduce_fat_one"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="1.87"
+                                        android:textColor="@color/Pink_main"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="kg"
+                                        android:textColor="@color/Black_b"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                                <!--第三周-->
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_toRightOf="@+id/reduce_fat_lin_two">
+
+                                    <TextView
+                                        android:id="@+id/reduce_fat_three"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="5.04"
+                                        android:textColor="@color/Pink_main"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="kg"
+                                        android:textColor="@color/Black_b"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                                <!--横线-->
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/reduce_fat_lin_two"
+                                    android:layout_marginTop="30dp"
+                                    android:background="@mipmap/jianzhi_qianli_line_2x" />
+                                <!--中间圆点-->
+                                <ImageView
+                                    android:id="@+id/Pink_Dots"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_below="@+id/reduce_fat_lin_two"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginLeft="90dp"
+                                    android:layout_marginRight="90dp"
+                                    android:layout_marginTop="20dp"
+                                    android:background="@mipmap/jianzhi_qianli_round_2x" />
+                                <!--左侧圆点-->
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_below="@+id/reduce_fat_lin_two"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_toLeftOf="@+id/Pink_Dots"
+                                    android:background="@mipmap/jianzhi_qianli_round_2x" />
+                                <!--右侧圆点-->
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_below="@+id/reduce_fat_lin_two"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_toRightOf="@+id/Pink_Dots"
+                                    android:background="@mipmap/jianzhi_qianli_round_2x" />
+
+                                <TextView
+                                    android:id="@+id/cycle_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/Pink_Dots"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp"
+                                    android:text="两周减重"
+                                    android:textColor="@color/add_text"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/Pink_Dots"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_toLeftOf="@+id/cycle_text"
+                                    android:text="一周减重"
+                                    android:textColor="@color/add_text"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/Pink_Dots"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_toRightOf="@+id/cycle_text"
+                                    android:text="三周减重"
+                                    android:textColor="@color/add_text"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <Button
+                                android:id="@+id/jianzhi_return"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="50dp"
+                                android:background="@drawable/selector_jianzhi_btn"
+                                android:paddingBottom="6dp"
+                                android:paddingLeft="92dp"
+                                android:paddingRight="92dp"
+                                android:paddingTop="6dp"
+                                android:text="重新测评"
+                                android:textColor="@drawable/selector_jianzhi_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--中断打卡-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="63dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="36dp"
+                        android:background="@mipmap/zhongduan_1_2x" />
+
+                    <LinearLayout
+                        android:layout_width="297dp"
+                        android:layout_height="72dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text="今日不运动，老大徒伤悲！" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text="中断打卡3天，功亏一篑！" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="24dp"
+                                android:gravity="center"
+                                android:text="幸好，还有" />
+
+                            <TextView
+                                android:layout_width="12dp"
+                                android:layout_height="match_parent"
+                                android:text="2"
+                                android:textColor="@color/Pink_main"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="次继续的机会，千万别浪费！" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/complete_button"
+                        android:gravity="center"
+                        android:paddingLeft="92dp"
+                        android:paddingRight="92dp"
+                        android:text="重新开始"
+                        android:textColor="@color/White" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="网络连接已断开!请联网后重试"
+                        android:textColor="@color/Black"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

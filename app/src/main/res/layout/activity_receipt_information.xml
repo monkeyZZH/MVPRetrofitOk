@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.activity.ReceipInformationActivity">
+    <include
+        layout="@layout/inculde_title_left"/>
+    <com.wpz.mymvpframe.view.bdbkview.SideslipListView
+        android:id="@+id/receipt_information_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+    </com.wpz.mymvpframe.view.bdbkview.SideslipListView>
+
+    <TextView
+        android:id="@+id/myadd_add_add"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/Pink_main"
+        android:text="新建收货地址"
+        android:textSize="16sp"
+        android:textColor="@color/White"
+        android:gravity="center"/>
+</LinearLayout>

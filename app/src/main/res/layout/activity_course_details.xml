@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/inculde_title_on_both_sides" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--课程标题-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <ImageView
+                    android:id="@+id/course_details_title_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/hehehe_2x" />
+
+                <TextView
+                    android:id="@+id/course_details_big_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/course_details_small_title"
+                    android:layout_centerHorizontal="true"
+                    android:text="改变体型第一步"
+                    android:textColor="@color/White"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/course_details_small_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="4dp"
+                    android:text="室内瑜伽"
+                    android:textColor="@color/White"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="11dp">
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/course_details_time_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_above="@+id/course_details_duration_time"
+                            android:layout_centerHorizontal="true"
+                            android:text="6"
+                            android:textColor="@color/White"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/course_details_duration_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="7dp"
+                            android:text="时长/分钟"
+                            android:textColor="@color/White"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/course_details_difficulty_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_above="@+id/course_details_duration_difficulty"
+                            android:layout_centerHorizontal="true"
+                            android:text="6"
+                            android:textColor="@color/White"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/course_details_duration_difficulty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="7dp"
+                            android:text="难度/系数"
+                            android:textColor="@color/White"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/course_details_kcal_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_above="@+id/course_details_duration_kcal"
+                            android:layout_centerHorizontal="true"
+                            android:text="6"
+                            android:textColor="@color/White"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/course_details_duration_kcal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="7dp"
+                            android:text="燃脂/千卡"
+                            android:textColor="@color/White"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <!--课程详情-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/Black_a"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/course_details_duration_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="课程详情"
+                    android:textColor="@color/White"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/course_details_duration_text_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/course_details_duration_text"
+                    android:layout_below="@+id/course_details_duration_text"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="呼吸"
+                    android:textColor="@color/Gray_main" />
+
+                <TextView
+                    android:id="@+id/course_details_duration_fen_ge_xian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/course_details_duration_text_two"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/course_details_duration_text_two"
+                    android:text="|"
+                    android:textColor="@color/Gray_main" />
+
+                <TextView
+                    android:id="@+id/course_details_duration_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_alignTop="@+id/course_details_duration_fen_ge_xian"
+                    android:layout_toRightOf="@+id/course_details_duration_fen_ge_xian"
+                    android:text="30s"
+                    android:textColor="@color/Gray_main" />
+
+                <TextView
+                    android:id="@+id/course_details_duration_introduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/course_details_duration_text_two"
+                    android:layout_marginTop="15dp"
+                    android:text="拉伸训练部位肌肉群（可以很好的改善关节活动，减少关节压力，提高肌肉的柔韧性）"
+                    android:textColor="@color/Gray_main" />
+
+                <ImageView
+                    android:id="@+id/course_details_duration_more"
+                    android:layout_width="21dp"
+                    android:layout_height="11dp"
+                    android:layout_below="@+id/course_details_duration_introduction"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="15dp"
+                    android:background="@mipmap/course_details_down_2x" />
+
+                <ImageView
+                    android:id="@+id/course_details_duration_effort_img"
+                    android:layout_width="12dp"
+                    android:layout_height="11.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@mipmap/like_xiao_2x" />
+
+                <TextView
+                    android:id="@+id/course_details_duration_effort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@+id/course_details_duration_effort_img"
+                    android:text="345678人正在努力"
+                    android:textColor="@color/Gray_main" />
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/course_details_duration_watch"
+                    android:background="@mipmap/eye_2x" />
+
+                <TextView
+                    android:id="@+id/course_details_duration_watch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:text="34567890人正在观看"
+                    android:textColor="@color/Gray_main" />
+
+
+            </RelativeLayout>
+            <!--六组动作-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:id="@+id/course_details_action_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:text="6组动作"
+                    android:textColor="@color/Black"
+                    android:textSize="14sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/course_details_img_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="92dp">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/White_training" />
+
+            <TextView
+                android:id="@+id/course_details_situation_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="left"
+                android:text="拉伸训练部位肌肉群（可以很好的改善关节活动度，减少关节的压力，提高肌肉的柔韧性）,拉伸训练部位肌肉群（可以很好的改善关节活动度，减少关节的压力，提高肌肉的柔韧性）拉伸训练部位肌肉群。"
+                android:textColor="@color/Black_a"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/White_training" />
+
+            <EditText
+                android:id="@+id/course_details_comment_edit"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="12dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/course_details_comment_edit"
+                android:drawableLeft="@mipmap/comment_edit_2x"
+                android:drawablePadding="8dp"
+                android:hint="发个评论才是真正的认可"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/White_training" />
+
+            <com.wpz.mymvpframe.view.bdbkview.MyListView
+                android:id="@+id/course_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.wpz.mymvpframe.view.bdbkview.MyListView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/White_training" />
+
+            <LinearLayout
+                android:id="@+id/course_details_all_dynamic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="35dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text="全部动态"
+                    android:textColor="@color/Black"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/more_2_2x" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/course_details_gogogo"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/Pink_main"
+        android:gravity="center"
+        android:text="开始第X天训练"
+        android:textColor="@color/White"
+        android:textSize="16sp" />
+</LinearLayout>

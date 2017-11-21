@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="92dp"
+    android:padding="8dp">
+    <TextView
+        android:id="@+id/recycler_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="舒展舒展"
+        android:textColor="@color/White"
+        android:textSize="13sp"/>
+    <ImageView
+        android:id="@+id/recycler_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_launcher"/>
+    <ImageView
+        android:id="@+id/recycler_time_img"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@mipmap/time_2x"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:id="@+id/recycler_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30s"
+        android:textColor="@color/White"
+        android:textSize="10sp"
+        android:layout_alignTop="@+id/recycler_time_img"
+        android:layout_toRightOf="@+id/recycler_time_img"
+        android:layout_marginLeft="4dp"/>
+</RelativeLayout>

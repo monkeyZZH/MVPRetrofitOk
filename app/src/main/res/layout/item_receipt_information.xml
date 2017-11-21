@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:minHeight="80dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White">
+        <RadioButton
+            android:id="@+id/receipt_information_check"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:button="@drawable/selector_check_box_hook"
+            android:layout_margin="15dp"/>
+        <TextView
+            android:id="@+id/receipt_information_address"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/receipt_information_check"
+            android:text="北京市XXXXXXXXXXXXXXXXXXX"
+            android:textColor="@color/Black_a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/receipt_information_name"
+            android:layout_width="wrap_content"
+            android:layout_height="18.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/receipt_information_address"
+            android:layout_marginBottom="18dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="吱吱吱"
+            android:textColor="@color/add_text"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/receipt_information_phono"
+            android:layout_width="wrap_content"
+            android:layout_height="18.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp"
+            android:layout_toRightOf="@+id/receipt_information_name"
+            android:gravity="center"
+            android:text="XXXXXXXXXXXX"
+            android:textColor="@color/add_text"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/receipt_information_modify_img"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/receipt_information_address"
+            android:layout_marginRight="18dp"
+            android:background="@mipmap/bianji_2x"
+            android:focusable="false"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtv_delete"
+        android:layout_width="96dp"
+        android:layout_height="match_parent"
+        android:background="@color/Pink_main"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="#eeeeee"
+        android:textSize="18sp" />
+</LinearLayout>
